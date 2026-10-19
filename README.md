@@ -65,4 +65,6 @@ Cada membro atua em uma branch própria, abrindo Pull Requests e revisando o có
 
 ## 📋 Changelog
 
+- v1.2 — Seção Estrutura e layout responsivo (Membro B)
+- v1.1 — Seções de Planos e Horários (Membro A)
 - v1.0 — Estrutura base do projeto

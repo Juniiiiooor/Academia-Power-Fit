@@ -1,0 +1,29 @@
+/* ===== Power Fit — Estrutura ===== */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.feature {
+  padding: 1.9rem 1.7rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform .22s ease, border-color .22s ease;
+}
+.feature:hover { transform: translateY(-6px); border-color: var(--primary); }
+
+.feature__icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 1.1rem;
+  border-radius: 14px;
+  background: rgba(255, 208, 40, .14);
+  font-size: 1.6rem;
+}
+.feature h3 { font-size: 1.12rem; margin-bottom: .5rem; }
+.feature p { font-size: .93rem; color: var(--muted); }
