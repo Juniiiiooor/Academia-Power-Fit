@@ -1,0 +1,14 @@
+# Editores
+.vscode/
+.idea/
+
+# Sistema
+Thumbs.db
+.DS_Store
+
+# Logs e temporários
+*.log
+_tmp/
+
+# Dependências
+node_modules/
