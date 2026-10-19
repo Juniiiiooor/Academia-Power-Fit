@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/planos.css">
   <link rel="stylesheet" href="css/horarios.css">
+  <link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
 
@@ -197,7 +198,90 @@
 
   <!-- SEÇÃO_ESTRUTURA -->
 
-  <!-- SEÇÃO_CONTATO -->
+  <!-- ===== CONTATO ===== -->
+  <section class="section section--dark" id="contato">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Contato</p>
+        <h2>Vamos conversar?</h2>
+        <p>Envie sua mensagem e nossa equipe responde em até 1 hora útil.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact__info">
+          <div class="contact__item">
+            <span class="contact__label">Endereço</span>
+            <p>Rua das Palmeiras, 450 — Centro<br>Florianópolis/SC · CEP 88010-000</p>
+          </div>
+
+          <div class="contact__item">
+            <span class="contact__label">Telefone / WhatsApp</span>
+            <p><a href="tel:+5548999990000">(48) 99999-0000</a></p>
+          </div>
+
+          <div class="contact__item">
+            <span class="contact__label">E-mail</span>
+            <p><a href="mailto:contato@powerfit.com.br">contato@powerfit.com.br</a></p>
+          </div>
+
+          <div class="contact__item">
+            <span class="contact__label">Redes sociais</span>
+            <p class="contact__social">
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="TikTok">TikTok</a>
+            </p>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="plano">Plano de interesse</label>
+            <select id="plano" name="plano">
+              <option value="">Selecione um plano</option>
+              <option>Essencial — R$ 79/mês</option>
+              <option>Performance — R$ 119/mês</option>
+              <option>Premium — R$ 189/mês</option>
+              <option>Ainda estou decidindo</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte o que você procura na academia..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Enviar mensagem</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2>Primeira aula <span>gratuita</span></h2>
+      <p>Venha conhecer a Power Fit sem compromisso. Traz sua roupa de treino!</p>
+      <a href="#contato" class="btn btn--dark btn--lg">Agendar minha visita</a>
+    </div>
+  </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
@@ -216,5 +300,12 @@
     </div>
   </footer>
 
+  <a href="https://wa.me/5548999990000" class="whatsapp" target="_blank" rel="noopener" aria-label="Fale no WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.7 6L4 29l8.2-1.6c1.2.5 2.4.7 3.8.7 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.3 0-2.6-.3-3.7-.9l-.7-.4-4.9 1 1-4.7-.4-.7c-.7-1.2-1.1-2.5-1.1-3.9 0-5.3 4.3-9.6 9.6-9.6s9.6 4.3 9.6 9.6-4.3 9.6-9.4 9.6zm5.3-7.2c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
