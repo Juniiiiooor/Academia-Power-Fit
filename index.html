@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/planos.css">
+  <link rel="stylesheet" href="css/horarios.css">
 </head>
 <body>
 
@@ -61,9 +63,137 @@
     </div>
   </section>
 
-  <!-- SEÇÃO_PLANOS -->
+  <!-- ===== PLANOS ===== -->
+  <section class="section" id="planos">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Planos</p>
+        <h2>Escolha o plano ideal para você</h2>
+        <p>Mensalidade sem surpresas. Cancele quando quiser, sem multa.</p>
+      </div>
 
-  <!-- SEÇÃO_HORARIOS -->
+      <div class="plans">
+        <article class="plan">
+          <h3 class="plan__name">Essencial</h3>
+          <p class="plan__price"><small>R$</small>79<span>/mês</span></p>
+          <p class="plan__desc">Para quem está começando a treinar.</p>
+          <ul class="plan__features">
+            <li>Acesso à sala de musculação</li>
+            <li>Horário livre de 6h às 22h</li>
+            <li>Avaliação física trimestral</li>
+            <li>Aplicativo de treinos</li>
+          </ul>
+          <a href="#contato" class="btn btn--outline">Quero este plano</a>
+        </article>
+
+        <article class="plan plan--featured">
+          <span class="plan__tag">Mais procurado</span>
+          <h3 class="plan__name">Performance</h3>
+          <p class="plan__price"><small>R$</small>119<span>/mês</span></p>
+          <p class="plan__desc">Musculação + aulas coletivas ilimitadas.</p>
+          <ul class="plan__features">
+            <li>Tudo do plano Essencial</li>
+            <li>Todas as aulas coletivas</li>
+            <li>Cross training e HIIT</li>
+            <li>Acompanhamento mensal</li>
+            <li>1 convidado por mês</li>
+          </ul>
+          <a href="#contato" class="btn btn--primary">Quero este plano</a>
+        </article>
+
+        <article class="plan">
+          <h3 class="plan__name">Premium</h3>
+          <p class="plan__price"><small>R$</small>189<span>/mês</span></p>
+          <p class="plan__desc">Experiência completa com personal.</p>
+          <ul class="plan__features">
+            <li>Tudo do plano Performance</li>
+            <li>Personal trainer 2x por semana</li>
+            <li>Nutricionista esportivo</li>
+            <li>Acesso à esteira e piscina</li>
+            <li>Toalha e armário exclusivos</li>
+          </ul>
+          <a href="#contato" class="btn btn--outline">Quero este plano</a>
+        </article>
+      </div>
+
+      <p class="plans__note">💰 Plano anual com <strong>2 meses grátis</strong> · Plano familiar com <strong>20% de desconto</strong></p>
+    </div>
+  </section>
+
+  <!-- ===== HORÁRIOS ===== -->
+  <section class="section section--dark" id="horarios">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Horários</p>
+        <h2>Abrimos para a sua rotina</h2>
+        <p>De segunda a domingo, com aulas para todos os horários do dia.</p>
+      </div>
+
+      <div class="schedule">
+        <div class="schedule__table-wrap">
+          <table class="schedule__table">
+            <thead>
+              <tr>
+                <th>Atividade</th>
+                <th>Seg / Qua / Sex</th>
+                <th>Ter / Qui</th>
+                <th>Sáb / Dom</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Atividade">Musculação (livre)</td>
+                <td data-label="Seg / Qua / Sex">06h – 22h</td>
+                <td data-label="Ter / Qui">06h – 22h</td>
+                <td data-label="Sáb / Dom">08h – 14h</td>
+              </tr>
+              <tr>
+                <td data-label="Atividade">Cross Training</td>
+                <td data-label="Seg / Qua / Sex">07h · 18h30</td>
+                <td data-label="Ter / Qui">07h · 18h30</td>
+                <td data-label="Sáb / Dom">09h</td>
+              </tr>
+              <tr>
+                <td data-label="Atividade">Funcional / HIIT</td>
+                <td data-label="Seg / Qua / Sex">12h15 · 19h30</td>
+                <td data-label="Ter / Qui">12h15 · 19h30</td>
+                <td data-label="Sáb / Dom">—</td>
+              </tr>
+              <tr>
+                <td data-label="Atividade">Musculação</td>
+                <td data-label="Seg / Qua / Sex">18h · 20h</td>
+                <td data-label="Ter / Qui">18h · 20h</td>
+                <td data-label="Sáb / Dom">10h</td>
+              </tr>
+              <tr>
+                <td data-label="Atividade">Alongamento &amp; Mobilidade</td>
+                <td data-label="Seg / Qua / Sex">19h</td>
+                <td data-label="Ter / Qui">—</td>
+                <td data-label="Sáb / Dom">11h</td>
+              </tr>
+              <tr>
+                <td data-label="Atividade">Boxing</td>
+                <td data-label="Seg / Qua / Sex">20h30</td>
+                <td data-label="Ter / Qui">20h30</td>
+                <td data-label="Sáb / Dom">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="schedule__card">
+          <h3>Recepção</h3>
+          <ul>
+            <li><span>Seg a Sex</span><strong>06h – 22h</strong></li>
+            <li><span>Sábado</span><strong>08h – 14h</strong></li>
+            <li><span>Domingo</span><strong>08h – 14h</strong></li>
+            <li><span>Feriados</span><strong>08h – 13h</strong></li>
+          </ul>
+          <p>📌 Aulas coletivas com vagas limitadas — faça sua inscrição na recepção ou pelo app.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
 
   <!-- SEÇÃO_ESTRUTURA -->
 
